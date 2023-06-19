@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To Do List </title>
+</head>
+<link rel="stylesheet" href="list.css">
+<body>
+  <nav>
+    <div class="wrapper">
+      <img src="To-Do-Img/images/R Logo Blue.png" alt="">
+      <div class="logo"><a href="home.html">Rekord</a></div>
+      <div class="menu">
+        <ul>
+          <a href="index.html">Home</a>
+          <a href="list.html">Agenda</a>
+          <a href="team.html">Our Team</a>
+        </ul>
+      </div>
+      </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h2>Your Agenda</h2>
+    <div class="todo-app">
+      <div class="row">
+        <input type="text" id = "input-box" placeholder="Enter your to do list">
+        <input type="date" id="deadline-input">
+        <button onclick="addList()">ADD</button>
+      </div>
+        <ul id = "list-container"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
