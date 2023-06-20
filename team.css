@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 *{ 
     margin: 0;
     padding: 0;
@@ -10,9 +11,12 @@
     position: relative;
 }
 .logo{
+    padding-left: 12px;
+    text-decoration: none;
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 700;
     float: left;
+    color: #123664;
 }
 
 .nav-img{
@@ -20,7 +24,7 @@
     height: 30px;
     float: left;
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 4%;
 }
 
 .menu {
@@ -50,8 +54,9 @@ nav ul  {
 nav ul {
     float: left;
 }
-nav  a{
+ul a{
     color: #123664;
+    font-size: 14px;
     font-weight: 500;
     text-align: center;
     padding: 0px 16px 0px 16px;
@@ -61,6 +66,7 @@ nav ul a:hover{
     text-decoration: underline;
     color: rgb(13, 13, 13);
 }
+
 
 input {
     flex: 1;
@@ -79,18 +85,17 @@ input {
 
 h1{
     color:#ffffff;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 40px;
     margin-top: 2%;
-    font-family: 'poppins';
     text-align: center;
+    line-height: 45px;
 }
 p{
     color: #338FC2;
-    margin-top: auto;
-    font-family: 'poppins';
-    font-weight: bolder;
+    font-weight: 500;
     text-align: center;
+    padding: auto;
 }
 
 .container {
@@ -101,7 +106,7 @@ p{
 }
 .container-team {
     width: 250px;
-    padding: 40px;
+    padding: 35px;
 }
 .container-team img {
     width: 180px;
@@ -114,6 +119,7 @@ p{
 .container-team h3 {
     color: #ffffff;
     margin: auto;
+    font-weight: 600;
     font-size: 12px;
     text-align: center;
 }
