@@ -176,6 +176,19 @@ ul li span:hover{
     background: #bcd9ff
 
 }
+
+ul li button{
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    padding: 9px;
+    width: 30px;
+    height: 30px;
+    background-size: 80%;
+    background-position: center;
+    background-image: url(To-Do-Img/images/Edit.png);
+}
+
 #deadline-input {
     padding: 10px;
     width: 20%;

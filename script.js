@@ -3,7 +3,7 @@ const deadlineInput = document.getElementById('deadline-input');
 const listContainer = document.getElementById("list-container");
 
 function addList() {
-    if (inputBox.value === '' || deadlineInput.value === ''){
+    if (inputBox.value === '' || deadlineInput.value === '') {
         alert("Silahkan isi list dan deadline");
     } else {
         let li = document.createElement("li");
@@ -11,6 +11,14 @@ function addList() {
         li.innerHTML = inputBox.value + " - Deadline: " + deadlineInput.value;
         span.innerHTML = "\u00d7";
         li.appendChild(span);
+
+        let editButton = document.createElement("button");
+        editButton.innerHTML = "";
+        editButton.onclick = function() {
+            editTask(li);
+        };
+        li.appendChild(editButton);
+
         listContainer.appendChild(li);
     }
     inputBox.value = "";
@@ -27,6 +35,16 @@ listContainer.addEventListener("click", function(e) {
         saveData();
     }
 }, false);
+
+function editTask(li) {
+    let taskText = li.firstChild;
+    let newText = prompt("Enter new To Do List:", taskText.nodeValue);
+
+    if (newText !== null && newText !== "") {
+        taskText.nodeValue = newText;
+        saveData();
+    }
+}
 
 function saveData() {
     localStorage.setItem("Data", listContainer.innerHTML);

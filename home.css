@@ -27,8 +27,8 @@ body{
 }
 
 .image{
-    width: 40%;
-    height: 40%;
+    width: 60%;
+    height: 50%;
     float: right;
 }
 
@@ -105,7 +105,7 @@ input {
     font-size: 35px;
     width: 100%;
     line-height: 50px;
-    text-align: justify;
+    text-align: left;
  }
 
  h3{
