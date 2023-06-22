@@ -41,7 +41,7 @@ nav{
     margin: auto;
     display:block;
     line-height: 50px;
-    position: sticky;
+    position: relative;
     position: -webkit-sticky;
     top:0%;
     background: #ffffff; 
